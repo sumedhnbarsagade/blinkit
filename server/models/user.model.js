@@ -1,5 +1,6 @@
-import { verify } from "jsonwebtoken";
+//import { verify } from "jsonwebtoken";
 import mongoose from "mongoose";
+import pkg from 'jsonwebtoken';
 
 // creating databse table
 
@@ -68,7 +69,7 @@ const userSchema = new mongoose.Schema({
         default : null
     },
 
-    forget_password,expiry : {
+    forget_password_expiry : {
         type : Date,
         default: ""
     },
